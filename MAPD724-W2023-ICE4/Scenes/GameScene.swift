@@ -7,7 +7,8 @@ var screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat?
 var screenHeight: CGFloat?
 
-class GameScene: SKScene {
+class GameScene: SKScene
+{
     
     var ocean1: Ocean?
     var ocean2: Ocean?
