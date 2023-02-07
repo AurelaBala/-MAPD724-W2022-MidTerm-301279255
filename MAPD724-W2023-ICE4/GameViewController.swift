@@ -15,22 +15,19 @@ class GameViewController: UIViewController
     @IBOutlet weak var LivesLabel: UILabel!
     @IBOutlet weak var ScoreLabel: UILabel!
     
+    @IBOutlet weak var StartLabel: UILabel!
     var currentScene: GKScene?
    
+    @IBOutlet weak var StartButton: UIButton!
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        
-    
-        setScene(sceneName: "EndScene")
+        presentStartScene()
         
         //initialize the Lives and Score
         CollisionManager.gameViewController = self
-        ScoreManager.Score = 0
-        ScoreManager.Lives = 5
-        updateLivesLabel()
-        updateScoreLabel()
+      
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask
@@ -71,6 +68,34 @@ class GameViewController: UIViewController
         
                 }
             }
-        
     }
+    
+    
+    func presentStartScene()
+    {
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+        setScene(sceneName: "StartScene")
+    }
+    
+    func presentEndScene()
+    {
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+        setScene(sceneName: "EndScene")
+    }
+    
+    @IBAction func startButton_Pressed(_ sender: UIButton)
+    {
+        StartButton.isHidden = true
+        StartLabel.isHidden = true
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        setScene(sceneName: "GameScene")
+    }
+    
 }
