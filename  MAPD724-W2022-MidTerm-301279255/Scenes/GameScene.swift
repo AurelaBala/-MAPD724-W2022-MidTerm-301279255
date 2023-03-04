@@ -40,8 +40,8 @@ override func sceneDidLoad()
         island = Island()
         addChild(island!)
         
-        //add 3 clouds to the scene
-        for _ in 0...2
+        //add 2 clouds to the scene
+        for _ in 0...1
         {
             let cloud: Cloud = Cloud()
             clouds.append(cloud)
