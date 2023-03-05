@@ -31,7 +31,7 @@ class Cloud : GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -902)
+        if(position.x <= -902)
         {
             Reset()
         }
@@ -45,20 +45,20 @@ class Cloud : GameObject
         //randomzie the horizontal speed
         horizonalSpeed = CGFloat((randomSource?.nextUniform())! * 4.0) - 2.0
         
-        //get a random number from -313 to 313
-        let randomX:Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.x = CGFloat(randomX)
-        
-        //get a random number from 902 to 932
-        let randomY:Int = (randomSource?.nextInt(upperBound: 30))! + 902
+        //get a random number from -640 to 640
+        let randomY:Int = (randomSource?.nextInt(upperBound: 1240))! - 620
         position.y = CGFloat(randomY)
+        
+        //get a random number from 464 to 494
+        let randomX:Int = (randomSource?.nextInt(upperBound: 30))! + 464
+        position.x = CGFloat(randomX)
         isColliding = false
     }
     
     func Move()
     {
-        position.y -= verticalSpeed!
-        position.x -= horizonalSpeed!
+        position.x -= verticalSpeed!
+        position.y -= horizonalSpeed!
     }
     
 }
