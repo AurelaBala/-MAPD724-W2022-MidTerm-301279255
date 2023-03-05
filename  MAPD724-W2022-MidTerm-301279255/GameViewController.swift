@@ -1,9 +1,16 @@
 //
 //  GameViewController.swift
-//  MAPD724-W2023-ICE-1A
+//  Mail Pilot Game
 //
-//  Created by Aurela Bala on 2023-01-16.
-//
+/* Created and Developed by
+Aurela Bala - 301279255
+Date Created: 02/03/2023
+Mail Pilot Game.
+ Mail Pilot Game is a Mobile App Game that earn scores and lives collecting mails over the island. When the Plane collide with clouds, loses one live.
+ Every 2000 scores the Pilot earn a live.
+ In this version the APP is adjusted to be played in landscape mode.
+Version 1.0.0.
+*/
 
 import UIKit
 import SpriteKit
@@ -33,17 +40,12 @@ class GameViewController: UIViewController
         CollisionManager.gameViewController = self
         LivesLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         ScoreLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
-
-        
-        
-      
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask
     {
         return.portrait
     }
-    
     
     override var prefersStatusBarHidden: Bool
     {
@@ -110,7 +112,6 @@ class GameViewController: UIViewController
         updateScoreLabel()
         setScene(sceneName: "GameScene")
     }
-    
     
     @IBAction func RestartButton_Pressed(_ sender: UIButton)
     {
