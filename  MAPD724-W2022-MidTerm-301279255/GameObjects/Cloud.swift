@@ -49,7 +49,7 @@ class Cloud : GameObject
         let randomY:Int = (randomSource?.nextInt(upperBound: 1148))! - 574
         position.y = CGFloat(randomY)
         
-        //get a random number from 464 to 494
+        //get a random number from 553 to 583
         let randomX:Int = (randomSource?.nextInt(upperBound: 30))! + 553
         position.x = CGFloat(randomX)
         isColliding = false

@@ -40,7 +40,7 @@ class Island : GameObject
     override func Reset()
     {
         position.x = 437
-        //get a random number from -313 to 313
+        //get a random number from -750 to 750
         let randomY:Int = (randomSource?.nextInt(upperBound: 1500))! - 750
         position.y = CGFloat(randomY)
         isColliding = false
