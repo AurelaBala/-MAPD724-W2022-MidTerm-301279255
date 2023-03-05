@@ -31,6 +31,9 @@ class GameViewController: UIViewController
         presentStartScene()
         //initialize the Lives and Score
         CollisionManager.gameViewController = self
+        LivesLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+        ScoreLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+
         
         
       

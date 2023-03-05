@@ -21,18 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIves: 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoA-Rb-Vzt">
-                                <rect key="frame" x="20" y="116" width="80" height="21"/>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl7-Vt-eAg">
-                                <rect key="frame" x="286" y="116" width="123.33333333333331" height="21"/>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-uH-NIs">
                                 <rect key="frame" x="81" y="355.33333333333331" width="268" height="49"/>
                                 <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="47"/>
@@ -40,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKe-hB-0t4">
-                                <rect key="frame" x="139" y="422" width="152" height="48.666666666666742"/>
+                                <rect key="frame" x="139" y="422" width="152" height="48.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="RESTART">
                                     <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="33"/>
@@ -68,22 +56,35 @@
                                     <action selector="startButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ILL-wo-ReO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl7-Vt-eAg">
+                                <rect key="frame" x="20" y="826" width="129" height="21"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIves: 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoA-Rb-Vzt">
+                                <rect key="frame" x="44" y="134" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Yl7-Vt-eAg" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="57" id="5d7-RR-ZJD"/>
-                            <constraint firstItem="uoA-Rb-Vzt" firstAttribute="baseline" secondItem="Yl7-Vt-eAg" secondAttribute="baseline" id="AUe-zQ-6ep"/>
+                            <constraint firstItem="Yl7-Vt-eAg" firstAttribute="leading" secondItem="uoA-Rb-Vzt" secondAttribute="leading" constant="-24" id="6Dn-T2-mO5"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Yl7-Vt-eAg" secondAttribute="trailing" constant="281" id="9Xv-0x-50u"/>
                             <constraint firstItem="wKe-hB-0t4" firstAttribute="baseline" secondItem="wMS-dQ-oRt" secondAttribute="baseline" constant="0.33333333333337123" id="Cxh-po-2PF"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="wKe-hB-0t4" secondAttribute="bottom" constant="427.33333333333337" id="GrC-Cc-AbK"/>
                             <constraint firstItem="Cfl-uH-NIs" firstAttribute="centerX" secondItem="wKe-hB-0t4" secondAttribute="centerX" id="Gz7-hM-lb0"/>
                             <constraint firstItem="wKe-hB-0t4" firstAttribute="top" secondItem="Cfl-uH-NIs" secondAttribute="bottom" constant="17.666666666666686" id="IdA-wy-a0X"/>
                             <constraint firstItem="Cfl-uH-NIs" firstAttribute="top" secondItem="WAt-2E-GPm" secondAttribute="bottom" constant="8.3333333333333144" id="JAi-Lg-jjW"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Yl7-Vt-eAg" secondAttribute="bottom" constant="51" id="L9Z-4x-LkE"/>
                             <constraint firstItem="wMS-dQ-oRt" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="158" id="Mst-UA-gL2"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Yl7-Vt-eAg" secondAttribute="trailing" constant="20.666666666666686" id="VtE-y9-ZSX"/>
+                            <constraint firstItem="uoA-Rb-Vzt" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="75" id="Woe-PJ-eWK"/>
                             <constraint firstItem="Cfl-uH-NIs" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="cR6-k3-HhY"/>
                             <constraint firstItem="WAt-2E-GPm" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="39" id="oNI-Da-Pgi"/>
-                            <constraint firstItem="uoA-Rb-Vzt" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="rnn-PB-F2u"/>
+                            <constraint firstItem="Yl7-Vt-eAg" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="20" id="sgK-0l-sGu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -97,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="1"/>
+            <point key="canvasLocation" x="240" y="0.64377682403433478"/>
         </scene>
     </scenes>
     <resources>
