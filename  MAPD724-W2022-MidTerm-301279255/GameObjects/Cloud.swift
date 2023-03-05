@@ -45,12 +45,12 @@ class Cloud : GameObject
         //randomzie the horizontal speed
         horizonalSpeed = CGFloat((randomSource?.nextUniform())! * 4.0) - 2.0
         
-        //get a random number from -640 to 640
-        let randomY:Int = (randomSource?.nextInt(upperBound: 1240))! - 620
+        //get a random number from -574 to 574
+        let randomY:Int = (randomSource?.nextInt(upperBound: 1148))! - 574
         position.y = CGFloat(randomY)
         
-        //get a random number from 464 to 494
-        let randomX:Int = (randomSource?.nextInt(upperBound: 30))! + 464
+        //get a random number from 553 to 583
+        let randomX:Int = (randomSource?.nextInt(upperBound: 30))! + 553
         position.x = CGFloat(randomX)
         isColliding = false
     }
