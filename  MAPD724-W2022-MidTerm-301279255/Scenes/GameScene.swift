@@ -75,16 +75,16 @@ override func sceneDidLoad()
     
     func touchDown(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        plane?.TouchMove(newPos: CGPoint(x: -255, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        plane?.TouchMove(newPos: CGPoint(x: -255, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        plane?.TouchMove(newPos: CGPoint(x: -255, y: pos.y))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

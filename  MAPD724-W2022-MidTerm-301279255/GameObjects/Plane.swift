@@ -27,20 +27,20 @@ class Plane : GameObject
     
     override func CheckBounds()
     {
-        if(position.x <= -320)
+        if(position.y <= -748)
         {
-            position.x = -320
+            position.y = -748
         }
         
-        if(position.x >= 320)
+        if(position.y >= 748)
         {
-            position.x = 320
+            position.y = 748
         }
     }
     
     override func Reset()
     {
-        position.y = -640
+        position.x = -255
     }
     
     func TouchMove(newPos: CGPoint)

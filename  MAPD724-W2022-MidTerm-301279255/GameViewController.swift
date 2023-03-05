@@ -31,15 +31,17 @@ class GameViewController: UIViewController
         presentStartScene()
         //initialize the Lives and Score
         CollisionManager.gameViewController = self
+        
+        
       
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask
     {
-       
-            return .portrait
+        return.portrait
     }
-
+    
+    
     override var prefersStatusBarHidden: Bool
     {
         return true
