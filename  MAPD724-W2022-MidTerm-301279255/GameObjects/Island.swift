@@ -31,7 +31,7 @@ class Island : GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -876)
+        if(position.x <= -449)
         {
             Reset()
         }
@@ -39,16 +39,16 @@ class Island : GameObject
     
     override func Reset()
     {
-        position.y = 876
+        position.x = 449
         //get a random number from -313 to 313
-        let randomX:Int = (randomSource?.nextInt(upperBound: 626))! - 313
-        position.x = CGFloat(randomX)
+        let randomY:Int = (randomSource?.nextInt(upperBound: 1580))! - 790
+        position.y = CGFloat(randomY)
         isColliding = false
     }
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
     
 }

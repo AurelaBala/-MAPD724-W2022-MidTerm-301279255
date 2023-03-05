@@ -24,7 +24,6 @@
 		3F4D53712991C1FA00EE6B58 /* island.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D535E2991C1FA00EE6B58 /* island.png */; };
 		3F4D53722991C1FA00EE6B58 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D535F2991C1FA00EE6B58 /* cloud.png */; };
 		3F4D53732991C1FA00EE6B58 /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53602991C1FA00EE6B58 /* nextButton.png */; };
-		3F4D53742991C1FA00EE6B58 /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53612991C1FA00EE6B58 /* ocean.png */; };
 		3F4D53752991C1FA00EE6B58 /* startButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53622991C1FA00EE6B58 /* startButton.png */; };
 		3F4D53762991C1FA00EE6B58 /* thunder.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53642991C1FA00EE6B58 /* thunder.ogg */; };
 		3F4D53772991C1FA00EE6B58 /* yay.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53652991C1FA00EE6B58 /* yay.ogg */; };
@@ -44,6 +43,7 @@
 		3F4D53912991CA0900EE6B58 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D53902991CA0900EE6B58 /* StartScene.swift */; };
 		3F4D53932991CF3300EE6B58 /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D53922991CF3300EE6B58 /* EndScene.sks */; };
 		3F4D53952991CF6B00EE6B58 /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D53942991CF6B00EE6B58 /* EndScene.swift */; };
+		3FE8C6BA29B46D750070812E /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8C6BC29B46D750070812E /* ocean.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,6 @@
 		3F4D535E2991C1FA00EE6B58 /* island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = island.png; sourceTree = "<group>"; };
 		3F4D535F2991C1FA00EE6B58 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		3F4D53602991C1FA00EE6B58 /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
-		3F4D53612991C1FA00EE6B58 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
 		3F4D53622991C1FA00EE6B58 /* startButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startButton.png; sourceTree = "<group>"; };
 		3F4D53642991C1FA00EE6B58 /* thunder.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.ogg; sourceTree = "<group>"; };
 		3F4D53652991C1FA00EE6B58 /* yay.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = yay.ogg; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		3F4D53902991CA0900EE6B58 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		3F4D53922991CF3300EE6B58 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
 		3F4D53942991CF6B00EE6B58 /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
+		3FE8C6BB29B46D750070812E /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/ocean.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 				3F4D535E2991C1FA00EE6B58 /* island.png */,
 				3F4D535F2991C1FA00EE6B58 /* cloud.png */,
 				3F4D53602991C1FA00EE6B58 /* nextButton.png */,
-				3F4D53612991C1FA00EE6B58 /* ocean.png */,
+				3FE8C6BC29B46D750070812E /* ocean.png */,
 				3F4D53622991C1FA00EE6B58 /* startButton.png */,
 			);
 			path = images;
@@ -289,7 +289,7 @@
 				3F4D53772991C1FA00EE6B58 /* yay.ogg in Resources */,
 				3F4D536C2991C1FA00EE6B58 /* plane3.png in Resources */,
 				3F4D533E2991C1AC00EE6B58 /* GameScene.sks in Resources */,
-				3F4D53742991C1FA00EE6B58 /* ocean.png in Resources */,
+				3FE8C6BA29B46D750070812E /* ocean.png in Resources */,
 				3F4D53782991C1FA00EE6B58 /* engine.ogg in Resources */,
 				3F4D53722991C1FA00EE6B58 /* cloud.png in Resources */,
 				3F4D536D2991C1FA00EE6B58 /* plane2.png in Resources */,
@@ -347,6 +347,14 @@
 				3F4D534B2991C1B000EE6B58 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE8C6BC29B46D750070812E /* ocean.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE8C6BB29B46D750070812E /* Base */,
+			);
+			name = ocean.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

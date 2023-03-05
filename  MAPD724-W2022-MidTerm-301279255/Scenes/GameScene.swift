@@ -29,7 +29,7 @@ override func sceneDidLoad()
         
         //add ocean2 to the game scene
         ocean2 = Ocean()
-        ocean2?.position.y = -627
+        ocean2?.position.x = -265
         addChild(ocean2!)
         
         //add plane to the Scene
